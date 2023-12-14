@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 기존의 메타데이터 및 제목 -->
+    <style>
+        /* 이전 스타일 유지 */
+
+        body {
+        background-color: #add8e6; /* 연한 파란색 */
+        /* 다른 스타일 설정 */
+    }
+        .main-image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .main-image img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .recipe-cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center; /* 중앙 정렬 */
+            margin-bottom: 20px;
+        }
+
+        .recipe-card {
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .recipe-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .recipe-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .add-to-cart {
+            margin-top: auto;
+        }
+
+        .cart {
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .cart-items {
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        .checkout {
+            margin-top: 10px;
+            background-color: #ff9800; /* 결제하기 버튼 배경색 */
+            color: white; /* 버튼 텍스트 색상 */
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+
+        .content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding-top: 50px;
+            color: white;
+        }
+       
+    </style>
+</head>
+<body>
+  
+
+     
+    
+    <div class="content">
+       
+    </div>
+
+    <div class="overlay">
+        <div class="main-image">
+            <a href="요한식.html">
+                <img src="배달의 민족.jpg" alt="요한 민족">
+            </a>
+        </div>
+        <div class="recipe-cards-container">
+        <div class="recipe-card" data-price="3000">
+            <img src="닭강정.jpg" alt="닭강정">
+            <div class="recipe-info">
+                <h3>닭강정</h3>
+                <p>맛있는 닭강정입니다. 3000 냥!</p>
+                <button class="add-to-cart">장바구니에 추가</button>
+            </div>
+        </div>
+        <div class="recipe-card" data-price="3500">
+            <img src="치킨텐더.jpg" alt="치킨 텐더">
+            <div class="recipe-info">
+                <h3>치킨 텐더</h3>
+                <p>담백한 치킨 텐더입니다. 3500 냥!!</p>
+                <button class="add-to-cart">장바구니에 추가</button>
+            </div>
+        </div>
+        <div class="recipe-card" data-price="2500">
+            <img src="떡볶이.jpg" alt="떡볶이">
+            <div class="recipe-info">
+                <h3>떡볶이</h3>
+                <p>매콤한 떡볶이입니다. 2500냥 !</p>
+                <button class="add-to-cart">장바구니에 추가</button>
+            </div>
+        </div>
+        <div class="recipe-card" data-price="2000">
+            <img src="만두.jpg" alt="만두">
+            <div class="recipe-info">
+                <h3>만두</h3>
+                <p>고기와야채가 듬뿍 들어간 만두입니다 2000냥!</p>
+                <button class="add-to-cart">장바구니에 추가</button>
+            </div>
+        </div>
+        <div class="recipe-cards-container">
+        <div class="recipe-card" data-price="3000">
+            <img src="짜장면.jpg" alt="짜장면">
+            <div class="recipe-info">
+                <h3>짜장면</h3>
+                <p>간짜장 맛있게 드세요 3000냥 !</p>
+                <button class="add-to-cart">장바구니에 추가</button>
+            </div>
+        </div>
+        <div class="recipe-card" data-price="3500">
+            <img src="짬뽕.jpg" alt="짬뽕">
+            <div class="recipe-info">
+                <h3>짬뽕</h3>
+                <p>매콤한 짬뽕 맛있게 드세요 3500냥 !</p>
+                <button class="add-to-cart">장바구니에 추가</button>
+            </div>
+        </div>
+        <div class="recipe-card" data-price="4000">
+            <img src="치킨마요덮밥.jpg" alt="치킨마요덮밥">
+            <div class="recipe-info">
+                <h3>치킨마요덮밥</h3>
+                <p> 치킨마요덮밥 맛있게 드세요 4000냥!</p>
+                <button class="add-to-cart">장바구니에 추가</button>
+            </div>
+        </div>
+        <div class="recipe-card" data-price="1500">
+            <img src="콜팝.jpg" alt="콜팝">
+            <div class="recipe-info">
+                <h3>콜팝</h3>
+                <p>달콤한 콜팝입니다 1500냥!.</p>
+                <button class="add-to-cart">장바구니에 추가</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart">
+        <h3>장바구니</h3>
+        <ul class="cart-items">
+            <!-- 장바구니에 담긴 항목들이 동적으로 표시됩니다. -->
+        </ul>
+        <p class="total-price">총 가격: $0</p>
+        <button class="checkout">결제하기</button>
+    </div>
+
+    <div class="payment-options" style="display: none;">
+        <h3>결제 방식 선택</h3>
+        <button class="payment-method" data-method="credit-card">신용카드</button>
+        <button class="payment-method" data-method="paypal">PayPal</button>
+        <button class="payment-method" data-method="bank-transfer">계좌 이체</button>
+    </div>
+</div>
+
+<script>
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+    const cartItems = document.querySelector('.cart-items');
+    let totalPrice = 0;
+
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const recipeInfo = this.closest('.recipe-card');
+            const recipeName = recipeInfo.querySelector('h3').innerText;
+            const price = parseInt(recipeInfo.dataset.price);
+            totalPrice += price;
+
+            const listItem = document.createElement('li');
+            listItem.innerText = `${recipeName} - $${price}`;
+            cartItems.appendChild(listItem);
+
+            document.querySelector('.total-price').innerText = `총 가격: $${totalPrice}`;
+        });
+    });
+
+    document.querySelector('.checkout').addEventListener('click', function () {
+        document.querySelector('.payment-options').style.display = 'block';
+    });
+
+    const paymentMethods = document.querySelectorAll('.payment-method');
+    paymentMethods.forEach(method => {
+        method.addEventListener('click', function () {
+            const selectedMethod = this.dataset.method;
+            alert(`선택하신 결제 방식은 ${selectedMethod} 입니다!`);
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>불만사항 제출</title>
+    <style>
+        .main-image {
+            text-align: center;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .main-image img {
+            width: 100px;
+            height: 100px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .complaint-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .complaint-form input,
+        .complaint-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .complaint-form textarea {
+            height: 150px;
+        }
+
+        .complaint-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .complaint-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-image">
+        <a href="요한식.html">
+            <img src="삐질이.jpg" alt="요한 민족">
+        </a>
+    </div>
+    <div class="complaint-form">
+        <h2>불만사항 제출 폼</h2>
+        <form onsubmit="showConfirmation()">
+            <label for="name">이름:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">이메일:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="complaint">불만내용:</label>
+            <textarea id="complaint" name="complaint" required></textarea>
+
+            <button type="submit">제출하기</button>
+        </form>
+    </div>
+
+    <script>
+        function showConfirmation() {
+            alert("제출되었습니다!");
+        }
+    </script>
+</body>
+</html>
